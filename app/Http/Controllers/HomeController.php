@@ -10,7 +10,7 @@ class HomeController extends Controller
     //
 
     function getAPIData(){
-        $API_KEY = "na52seY-hERdUQgyhYnqeBxm39Wpck_BCuBNXpnn_GM";
+        $API_KEY = "YOUR_API_KEY";
         $apiUrl = "https://api.unsplash.com/photos/?client_id=".$API_KEY."&per_page=100";
                 
         // Variables for image URLs and potential error handling
