@@ -1,0 +1,44 @@
+.tile-img{
+    margin-top: 10px;
+    position: relative;
+}
+.tile-img img{
+    position: relative;
+}
+.background-image{
+    width: 100%;
+    border-radius: 30px;    
+}
+.tile-img:hover{
+    .tile-img-info{
+        font-family: 'Poppins';
+        display: flex;
+        border-radius: 0px 0px 30px 30px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.00) 100%);
+        position: absolute;
+        /* width: max-content; */
+        bottom: 7px;
+        left: 0px;
+        right: 0px;
+        padding: 25px;
+        align-items: center;    
+    }
+}
+
+.tile-img-info{
+    display: none;
+}
+
+.tile-img-buttons{
+    display: flex;
+}
+.tile-img-buttons div{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 10px 12px;
+    border-radius: 22.5px;
+    background: rgba(217, 217, 217, 0.25);
+    border: none;
+    margin-right: 10px;
+}

@@ -1,0 +1,246 @@
+*{
+    font-family: 'Poppins';
+}
+body{
+    background-color: #E0E8EB;
+    /* background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),        
+        url("../../images/default-tile-3.png");     */
+}
+nav{
+    display: flex;
+    flex: 1;
+    justify-content: center;    
+    align-items: center;
+    list-style-type: none;
+    /* background-color: aqua; */
+}
+nav a{
+    
+    margin: 0px 40px;
+    /* padding: 10px; */
+}
+
+#App-Logo{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;    
+    font-family: 'Poppins';
+    /* background-color: aquamarine; */
+}
+
+#App-Logo img{
+    width: 40px;
+    height: 40px;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+}
+#Navbar{
+    display: flex;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 99 !important;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0px 4px 25px 4px rgba(0, 0, 0, 0.05);
+}
+#Buttons{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+}
+.signup{
+    font-family: 'Poppins';
+    font-size: normal;
+    border: none;
+    font-weight: 600;
+    color: #2F667B;;
+    background-color: white;
+    margin-right: 20px;    
+}
+
+.login{
+    font-family: 'Poppins';
+    font-size: medium;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    background: #2F667B;
+    width: 80px;
+    height: 50px;    
+}
+
+#background-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #2F667B; */
+    margin: 100px 10%;
+}
+#background-image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;    
+}
+
+#profile-info{
+    /* background-color: lightblue; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    top: 150px;
+    width: 72%;
+    margin: 100px 13%;
+}
+#profile-picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 3px solid #E8F6FD;
+    margin-right: 15px;
+    box-shadow: 0px 0px 15px 25px rgba(0, 0, 0, 0.05);
+}
+#profile-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;    
+}
+
+.details{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+#add-new button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #2F667B;
+    padding: 12px;
+    border: none;
+    color: white;
+}
+
+#all-wallpapers{
+    justify-content: space-between;
+    display: flex;
+    margin: 150px 10%;
+}
+#wallpaper-col-1, #wallpaper-col-2, #wallpaper-col-3{
+    width: 100%;
+    margin: 10px;
+}
+
+.tile-img{
+    margin-top: 10px;
+    position: relative;
+}
+.tile-img img{
+    position: relative;
+}
+.background-image{
+    width: 100%;
+    border-radius: 30px;    
+}
+.tile-img:hover{
+    .tile-img-info{
+        font-family: 'Poppins';
+        display: flex;
+        border-radius: 0px 0px 30px 30px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.00) 100%);
+        position: absolute;
+        /* width: max-content; */
+        bottom: 7px;
+        left: 0px;
+        right: 0px;
+        padding: 25px;
+        align-items: center;    
+    }
+}
+
+#Wallpaper-Tile img{    
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.tile-img-info{
+    display: none;
+}
+
+.tile-img-buttons{
+    display: flex;
+}
+.tile-img-buttons div{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 10px 12px;
+    border-radius: 22.5px;
+    background: rgba(217, 217, 217, 0.25);
+    border: none;
+    margin-right: 10px;
+}
+
+#search-bar{
+    visibility: hidden;
+    position: absolute;
+    top: 140px;
+    top: 150px;
+    left: 40%;
+    width: 450px;
+    display: flex;
+    background-color: white;
+    border-radius: 37.5px;    
+    box-shadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.05);   
+}
+#search-bar input{
+    flex: 1;
+    border: none;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 37.5px;    
+}
+#search-bar img{
+    padding: 15px;
+}
+
+@media only screen and (max-aspect-ratio: 10/16) {
+    #wallpaper-col-2, #wallpaper-col-3{
+        display: none;
+    }
+}
+@media only screen and (max-aspect-ratio: 5/4){
+    #background-image{
+        margin: 100px 0%;
+    }
+    #wallpaper-col-3{
+        display: none;
+    }
+    #all-wallpapers{
+        margin: 150px 5%;
+    }
+    #profile-info{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        top: 150px;
+        width: 89%;
+        margin: 100px 5%;
+    }
+}
