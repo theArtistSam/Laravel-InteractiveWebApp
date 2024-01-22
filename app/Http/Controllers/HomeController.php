@@ -68,7 +68,7 @@ class HomeController extends Controller
         try {
             $inputData = $request->input('inputData');
     
-            $API_KEY = "na52seY-hERdUQgyhYnqeBxm39Wpck_BCuBNXpnn_GM";
+            $API_KEY = "YOUR_API_KEY";
             $searchUrl = "https://api.unsplash.com/search/photos/?client_id=" . $API_KEY . "&query=" . $inputData;
     
             // Variables for image URLs and potential error handling
