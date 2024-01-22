@@ -68,4 +68,4 @@ php artisan serve
 ![Home Page](UI/HomePage.png)
 ![Wallpaper Clicked State](UI/HomePageState.png)
 ![User Profile](UI/UserProfile.png)
-![Edit Wallpaper](UI/EditWallpaper.png)
+![Edit Wallpaper](UI/EditWalllpaper.png)
